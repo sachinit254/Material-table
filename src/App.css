@@ -1,0 +1,9 @@
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: rgb(70, 181, 218);
+}
+.app {
+  width: 90vw;
+}
