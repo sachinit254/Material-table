@@ -73,7 +73,7 @@ function App() {
 
   const rowUpdate = async (newData, oldData, resolve) => {
     try {
-      const { data } = await axios.put(
+      const update = await axios.put(
         `https://jsonplaceholder.typicode.com/users/${newData.id}`,
         newData
       );
@@ -89,7 +89,7 @@ function App() {
 
   const rowDelete = async (oldData, resolve) => {
     try {
-      const { data } = await axios.delete(
+      const del = await axios.delete(
         `https://jsonplaceholder.typicode.com/users/${oldData.id}`
       );
       const deleteUser = [...user];
